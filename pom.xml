@@ -2,13 +2,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>open.commons</groupId>
 	<artifactId>open-commons-json</artifactId>
-	<version>1.6.3.2</version>
+	<version>1.6.3.3</version>
 	<name>Open Commons for JSON</name>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<java.source.version>1.8</java.source.version>
-		<open-commons-core.version>1.4.16</open-commons-core.version>
+		<open-commons-core.version>1.4.17</open-commons-core.version>
 	</properties>
 
 	<distributionManagement>
@@ -128,7 +128,12 @@
 	</build>
 
 
-	<description>[20148/04/30]
+	<description>[20148/09/10]
+- Release: 1.6.3.3
+- Update
+ + open.commons.core updated: 1.4.17
+
+[20148/04/30]
 - Release: 1.6.3.2
 - Update
  + open.commons.core updated: 1.4.16
