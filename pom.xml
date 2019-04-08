@@ -1,14 +1,34 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>open.commons</groupId>
 	<artifactId>open-commons-json</artifactId>
-	<version>1.6.3.3</version>
+	<version>1.6.3.4</version>
 	<name>Open Commons for JSON</name>
 
 	<properties>
+		<encoding>UTF-8</encoding>
 		<java.version>1.8</java.version>
-		<java.source.version>1.8</java.source.version>
-		<open-commons-core.version>1.4.17</open-commons-core.version>
+
+		<compile.encoding>UTF-8</compile.encoding>
+		<compile.source.version>1.8</compile.source.version>
+		<compile.target.version>1.8</compile.target.version>
+
+		<!-- >>> begin: dependencies -->
+		<org.apache.logging.lo4j.log4j-core.version>2.7</org.apache.logging.lo4j.log4j-core.version>
+		<org.apache.logging.lo4j.log4j-api.version>2.7</org.apache.logging.lo4j.log4j-api.version>
+
+		<open-commons-core.version>1.6.5</open-commons-core.version>
+		<!-- <<< end: dependencies -->
+
+		<!-- >>> begin: plugin dependencies -->
+		<build.finalName>open-commons-json-${project.version}</build.finalName>
+
+		<build-helper-maven-plugin.version>1.1</build-helper-maven-plugin.version>
+		<maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+		<maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+		<maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
+		<!-- >>> end: plugin dependencies -->
 	</properties>
 
 	<distributionManagement>
@@ -33,51 +53,43 @@
 	</dependencies>
 
 	<build>
+		<finalName>${build.finalName}</finalName>
 		<defaultGoal>install</defaultGoal>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
 		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.*</include>
+				</includes>
+			</resource>
 			<resource>
 				<directory>${project.basedir}</directory>
 				<includes>
-					<include>LICENSE.txt</include>
+					<include>LICENSE</include>
 				</includes>
 				<targetPath>META-INF</targetPath>
 			</resource>
 		</resources>
 		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.1</version>
-				<executions>
-					<execution>
-						<id>add-source</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>add-source</goal>
-						</goals>
-						<configuration>
-							<sources>
-								<source>src.jettison</source>
-							</sources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+			<!-- >>> begin: compile -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
-					<encoding>UTF-8</encoding>
-					<source>${java.source.version}</source>
-					<target>${java.source.version}</target>
+					<encoding>${compile.encoding}</encoding>
+					<source>${compile.source.version}</source>
+					<target>${compile.target.version}</target>
 				</configuration>
 			</plugin>
+			<!-- <<< end: compile -->
+
+			<!-- >>> begin: attach source -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>2.2.1</version>
+				<version>${maven-source-plugin.version}</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
@@ -90,45 +102,70 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- <<< end: attach source -->
 
-<!-- 			<plugin> -->
-<!-- 				<artifactId>maven-antrun-plugin</artifactId> -->
-<!-- 				<version>${java.version}</version> -->
-<!-- 				<executions> -->
-<!-- 					<execution> -->
-<!-- 						<phase>compile</phase> -->
-<!-- 						<configuration> -->
-<!-- 							<target> -->
-<!-- 								<ant antfile="${basedir}/build.xml"> -->
-<!-- 									<target name="deploy" /> -->
-<!-- 								</ant> -->
-<!-- 							</target> -->
-<!-- 						</configuration> -->
-<!-- 						<goals> -->
-<!-- 							<goal>run</goal> -->
-<!-- 						</goals> -->
-<!-- 					</execution> -->
-<!-- 				</executions> -->
+			<!-- >>> begin: javadoc -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${maven-javadoc-plugin.version}</version>
+				<configuration>
+					<goal>deploy</goal>
+					<show>private</show>
+					<nohelp>true</nohelp>
+					<additionalOptions>
+						<additionalOption>-Xdoclint:none</additionalOption>
+					</additionalOptions>
+					<charset>${encoding}</charset>
+					<docencoding>${encoding}</docencoding>
+					<encoding>${encoding}</encoding>
+				</configuration>
+			</plugin>
+			<!-- <<< end: javadoc -->
 
-<!-- 				<dependencies> -->
-<!-- 					<dependency> -->
-<!-- 						<groupId>ant-contrib</groupId> -->
-<!-- 						<artifactId>ant-contrib</artifactId> -->
-<!-- 						<version>1.0b3</version> -->
-<!-- 						<exclusions> -->
-<!-- 							<exclusion> -->
-<!-- 								<groupId>ant</groupId> -->
-<!-- 								<artifactId>ant</artifactId> -->
-<!-- 							</exclusion> -->
-<!-- 						</exclusions> -->
-<!-- 					</dependency> -->
-<!-- 				</dependencies> -->
-<!-- 			</plugin> -->
+			<!-- <plugin> -->
+			<!-- <artifactId>maven-antrun-plugin</artifactId> -->
+			<!-- <version>${java.version}</version> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <phase>compile</phase> -->
+			<!-- <configuration> -->
+			<!-- <target> -->
+			<!-- <ant antfile="${basedir}/build.xml"> -->
+			<!-- <target name="deploy" /> -->
+			<!-- </ant> -->
+			<!-- </target> -->
+			<!-- </configuration> -->
+			<!-- <goals> -->
+			<!-- <goal>run</goal> -->
+			<!-- </goals> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+
+			<!-- <dependencies> -->
+			<!-- <dependency> -->
+			<!-- <groupId>ant-contrib</groupId> -->
+			<!-- <artifactId>ant-contrib</artifactId> -->
+			<!-- <version>1.0b3</version> -->
+			<!-- <exclusions> -->
+			<!-- <exclusion> -->
+			<!-- <groupId>ant</groupId> -->
+			<!-- <artifactId>ant</artifactId> -->
+			<!-- </exclusion> -->
+			<!-- </exclusions> -->
+			<!-- </dependency> -->
+			<!-- </dependencies> -->
+			<!-- </plugin> -->
 		</plugins>
 	</build>
 
 
-	<description>[20148/09/10]
+	<description>[2019/03/29]
+- Release: 1.6.3.4
+- Update
+ + open.commons.core updated: 1.6.5
+
+[2018/09/10]
 - Release: 1.6.3.3
 - Update
  + open.commons.core updated: 1.4.17
