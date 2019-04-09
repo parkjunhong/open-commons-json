@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>open.commons</groupId>
 	<artifactId>open-commons-json</artifactId>
-	<version>1.6.3.4</version>
+	<version>1.6.4</version>
 	<name>Open Commons for JSON</name>
 
 	<properties>
@@ -160,7 +160,11 @@
 	</build>
 
 
-	<description>[2019/03/29]
+	<description>[2019/04/09]
+- Release: 1.6.4
+- Rebuild source directory structure.
+
+[2019/03/29]
 - Release: 1.6.3.4
 - Update
  + open.commons.core updated: 1.6.5
