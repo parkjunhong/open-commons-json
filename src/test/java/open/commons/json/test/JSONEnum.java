@@ -5,7 +5,7 @@
  *
  * Date  : 2014. 3. 14. 오전 11:16:05
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 
@@ -15,7 +15,7 @@ import open.commons.json.IEnumMarshaller;
 import open.commons.utils.ConvertUtils;
 
 /**
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 public enum JSONEnum {

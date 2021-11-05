@@ -5,7 +5,7 @@
  *
  * Date  : 2014. 5. 2. 오후 2:27:00
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 
@@ -16,7 +16,7 @@ import open.commons.json.annotation.JSONField;
 /**
  * 
  * @since 2014. 5. 2.
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  */
 public class JSONModel3<T, V> extends JSONModel2<T, V> {
 

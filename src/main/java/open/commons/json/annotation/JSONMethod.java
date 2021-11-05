@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Park Jun-Hong (parkjunhong77/gmail/com)
+ * Copyright 2011 Park Jun-Hong (parkjunhong77@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
  *
  * Date  : 2016. 2. 5. 오후 2:28:58
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 
@@ -36,7 +36,7 @@ import java.lang.annotation.Target;
  * 사용자 정의 클래스 메소드에서 JSON 변환 대상을 설정하는 어노테이션
  * 
  * @since 2016. 2. 5.
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  * @since 1.4.6
  */

@@ -1,6 +1,6 @@
 /*
 
- * Copyright 2011 Park Jun-Hong (parkjunhong77/gmail/com)
+ * Copyright 2011 Park Jun-Hong (parkjunhong77@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
  *
  * Date  : 2014. 3. 13. 오전 12:37:21
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 
@@ -91,7 +91,7 @@ import open.commons.utils.ConvertUtils;
  * java.util.concurrent.TransferQueue:1.7=java.util.concurrent.LinkedTransferQueue:1.7
  * </pre>
  * 
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 @SuppressWarnings("rawtypes")
@@ -526,7 +526,7 @@ public class JSONMapper {
             case JSONMapper.FIELD_TYPE_JSON_CLASS:
             case JSONMapper.FIELD_TYPE_DYNAMIC_NAMED_JSON_CLASS:
                 // FIXME: DOES NOT YET distinguish explicitly between 'FIELD_TYPE_JSON_CLASS'. - 2014. 6.
-                // 17./Park_Jun_Hong_(fafanmama_at_naver_com)
+                // 17./Park_Jun_Hong_(parkjunhong77@gmail.com)
                 return marshallValue(rootClass, object, buildConfig, marshaller);
 
             case JSONMapper.FIELD_TYPE_GENERIC_TYPE_VARIABLE:
@@ -594,7 +594,7 @@ public class JSONMapper {
             case JSONMapper.FIELD_TYPE_GENERIC_ARRAY:
                 break;
             default:
-                // Support a class does not implement IJSONString. - [Park_Jun_Hong_(fafanmama_at_naver_com)]: 2014. 6.
+                // Support a class does not implement IJSONString. - [Park_Jun_Hong_(parkjunhong77@gmail.com)]: 2014. 6.
                 // 3.
                 if (type < FIELD_TYPE_UNKNOWN) {
                     if (marshaller == null) {
@@ -656,7 +656,7 @@ public class JSONMapper {
 
             case JSONMapper.FIELD_TYPE_DYNAMIC_NAMED_JSON_CLASS:
                 // FIXME: DOES NOT YET distinguish explicitly between 'FIELD_TYPE_JSON_CLASS'. - 2014. 6.
-                // 17./Park_Jun_Hong_(fafanmama_at_naver_com)
+                // 17./Park_Jun_Hong_(parkjunhong77@gmail.com)
 
                 // jsonModel = (IJSONString) value;
                 //
@@ -918,7 +918,7 @@ public class JSONMapper {
             case JSONMapper.FIELD_TYPE_JSON_CLASS:
             case JSONMapper.FIELD_TYPE_DYNAMIC_NAMED_JSON_CLASS:
                 // FIXME: DOES NOT YET distinguish explicitly between 'FIELD_TYPE_JSON_CLASS'. - 2014. 6.
-                // 17./Park_Jun_Hong_(fafanmama_at_naver_com)
+                // 17./Park_Jun_Hong_(parkjunhong77@gmail.com)
                 return unmarshallValue(rootClass, value, buildConfig);
             case JSONMapper.FIELD_TYPE_GENERIC_TYPE_VARIABLE:
 
@@ -935,7 +935,7 @@ public class JSONMapper {
 
                 for (int i = 0; i < typeVars.length; i++) {
                     // (start) [BUG-FIX]: 연속된 Generic Type Variable 처리를 위한 정보 추가 버그 수정 /
-                    // Park_Jun_Hong_(fafanmama_at_naver_com): 2014. 6. 18. 오후 3:47:25
+                    // Park_Jun_Hong_(parkjunhong77@gmail.com): 2014. 6. 18. 오후 3:47:25
                     // config.register(typeVars[i].getName(), gTypeVars.get(i));
                     config.addTypeVariable(gTypeVars.get(i));
                     // (end): 2014. 6. 18. 오후 3:47:25
@@ -944,7 +944,7 @@ public class JSONMapper {
                 return unmarshallValue(gTypeVar.getTypeClass(), value, config);// BuildConfig.config(typeVar.getGenericTypeVars()));
 
             case JSONMapper.FIELD_TYPE_ARRAY:
-                // (start) [BUG-FIX]: null 이 올 수 있는 경우에 대한 처리 / Park_Jun_Hong_(fafanmama_at_naver_com): 2014. 11. 4. 오후
+                // (start) [BUG-FIX]: null 이 올 수 있는 경우에 대한 처리 / Park_Jun_Hong_(parkjunhong77@gmail.com): 2014. 11. 4. 오후
                 // 5:01:26
                 if (value == null) {
                     return null;
@@ -981,7 +981,7 @@ public class JSONMapper {
 
                 Collection col = (Collection) implClass.newInstance();
 
-                // (start) [BUG-FIX]: null 이 올 수 있는 경우에 대한 처리 / Park_Jun_Hong_(fafanmama_at_naver_com): 2014. 11. 4. 오후
+                // (start) [BUG-FIX]: null 이 올 수 있는 경우에 대한 처리 / Park_Jun_Hong_(parkjunhong77@gmail.com): 2014. 11. 4. 오후
                 // 5:01:58
                 if (value == null) {
                     return col;
@@ -1016,7 +1016,7 @@ public class JSONMapper {
 
                 Map map = (Map) implClass.newInstance();
 
-                // (start) [BUG-FIX]: null 이 올 수 있는 경우에 대한 처리 / Park_Jun_Hong_(fafanmama_at_naver_com): 2014. 11. 4. 오후
+                // (start) [BUG-FIX]: null 이 올 수 있는 경우에 대한 처리 / Park_Jun_Hong_(parkjunhong77@gmail.com): 2014. 11. 4. 오후
                 // 5:02:04
                 if (value == null) {
                     return map;
@@ -1045,7 +1045,7 @@ public class JSONMapper {
             case JSONMapper.FIELD_TYPE_GENERIC_ARRAY:
                 break;
             default:
-                // Support a class does not implement IJSONString. - [Park_Jun_Hong_(fafanmama_at_naver_com)]: 2014. 6.
+                // Support a class does not implement IJSONString. - [Park_Jun_Hong_(parkjunhong77@gmail.com)]: 2014. 6.
                 // 3.
                 if (type < FIELD_TYPE_UNKNOWN) {
                     return value;
@@ -1094,10 +1094,10 @@ public class JSONMapper {
 
             case JSONMapper.FIELD_TYPE_DYNAMIC_NAMED_JSON_CLASS:
                 // FIXME: DOES NOT YET distinguish explicitly between 'FIELD_TYPE_JSON_CLASS'. - 2014. 6.
-                // 17./Park_Jun_Hong_(fafanmama_at_naver_com)
+                // 17./Park_Jun_Hong_(parkjunhong77@gmail.com)
                 try {
 
-                    // (start) [BUG-FIX]: 실제 데이터가 잘못된 경우에 대한 방어 코드 / Park_Jun_Hong_(fafanmama_at_naver_com): 2014. 11.
+                    // (start) [BUG-FIX]: 실제 데이터가 잘못된 경우에 대한 방어 코드 / Park_Jun_Hong_(parkjunhong77@gmail.com): 2014. 11.
                     // 11. 오후 6:07:21
                     if (value == null || !JSONObject.class.isAssignableFrom(value.getClass())) {
                         return null;
@@ -1123,7 +1123,7 @@ public class JSONMapper {
 
             case JSONMapper.FIELD_TYPE_JSON_CLASS:
 
-                // (start) [BUG-FIX]: 실제 데이터가 잘못된 경우에 대한 방어 코드 / Park_Jun_Hong_(fafanmama_at_naver_com): 2014. 11. 11.
+                // (start) [BUG-FIX]: 실제 데이터가 잘못된 경우에 대한 방어 코드 / Park_Jun_Hong_(parkjunhong77@gmail.com): 2014. 11. 11.
                 // 오후 6:07:21
                 if (value == null || !JSONObject.class.isAssignableFrom(value.getClass())) {
                     return null;
@@ -1150,7 +1150,7 @@ public class JSONMapper {
 
             case JSONMapper.FIELD_TYPE_ARRAY:
 
-                // (start) [BUG-FIX]: 실제 데이터가 잘못된 경우에 대한 방어 코드 / Park_Jun_Hong_(fafanmama_at_naver_com): 2014. 11. 11.
+                // (start) [BUG-FIX]: 실제 데이터가 잘못된 경우에 대한 방어 코드 / Park_Jun_Hong_(parkjunhong77@gmail.com): 2014. 11. 11.
                 // 오후 6:07:21
                 if (value == null || !JSONArray.class.isAssignableFrom(value.getClass())) {
                     return null;
@@ -1166,7 +1166,7 @@ public class JSONMapper {
                     throw new JSONUnmarshalledException("\n(object): " + rootClass + "\n(value): " + value, e);
                 }
             case JSONMapper.FIELD_TYPE_COLLECTION:
-                // (start) [BUG-FIX]: 실제 데이터가 잘못된 경우에 대한 방어 코드 / Park_Jun_Hong_(fafanmama_at_naver_com): 2014. 11. 11.
+                // (start) [BUG-FIX]: 실제 데이터가 잘못된 경우에 대한 방어 코드 / Park_Jun_Hong_(parkjunhong77@gmail.com): 2014. 11. 11.
                 // 오후 6:07:21
                 if (value == null || !JSONArray.class.isAssignableFrom(value.getClass())) {
                     return null;
@@ -1190,7 +1190,7 @@ public class JSONMapper {
             case JSONMapper.FIELD_TYPE_UNKNOWN:
                 break;
             default:
-                // FIXME: Support 'unknown type marshaller' - [Park_Jun_Hong_(fafanmama_at_naver_com)]: 2014. 6. 4.
+                // FIXME: Support 'unknown type marshaller' - [Park_Jun_Hong_(parkjunhong77@gmail.com)]: 2014. 6. 4.
                 break;
         }
 
@@ -1253,7 +1253,7 @@ public class JSONMapper {
                 return FIELD_TYPE_ENUM;
             }
 
-            // Support JSON string which has dynamic names. - [Park_Jun_Hong_(fafanmama_at_naver_com)]: 2014. 6. 4.
+            // Support JSON string which has dynamic names. - [Park_Jun_Hong_(parkjunhong77@gmail.com)]: 2014. 6. 4.
             // IMPORTANT: Methods calls this method MUST support 'FIELD_TYPE_DYNAMIC_NAMED_JSON_CLASS'.
             if (IDynamicNamedJSONString.class.isAssignableFrom(fieldClass)) {
                 return FIELD_TYPE_DYNAMIC_NAMED_JSON_CLASS;

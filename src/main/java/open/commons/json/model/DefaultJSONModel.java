@@ -1,6 +1,6 @@
 /*
 
- * Copyright 2011 Park Jun-Hong (parkjunhong77/gmail/com)
+ * Copyright 2011 Park Jun-Hong (parkjunhong77@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
  *
  * Date  : 2012. 10. 29. 오전 1:08:28
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  *
  */
 package open.commons.json.model;
@@ -52,7 +52,7 @@ import open.commons.reflect.GenericTypeVariable;
 /**
  * 하위 클래스들의 필드중에서 {@link JSONField}를 사용한 필드들을 검색해 자동으로 {@link #toString()}를 제공해주는 클래스.
  * 
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 @SuppressWarnings({ "serial" })
@@ -155,7 +155,7 @@ public abstract class DefaultJSONModel extends AbstractJSONModel {
             // marshaller,
             // typeInfoList.toArray());
 
-            // TEST-CODE - [Park_Jun_Hong_(fafanmama_at_naver_com)]: 2014. 4. 7.
+            // TEST-CODE - [Park_Jun_Hong_(parkjunhong77@gmail.com)]: 2014. 4. 7.
             Object jsonValue = JSONMapper.marshall(value, JSONMapper.getBuildConfig(this).getFieldBuildConfig(fieldName), marshaller, typeInfoList.toArray());
 
             if (jsonValue != null) {
@@ -185,7 +185,7 @@ public abstract class DefaultJSONModel extends AbstractJSONModel {
             // Object value = JSONMapper.unmarshall(fieldName, JSONUtil.get(json, fieldName), getBuildConfig(),
             // typeInfoList.toArray());
 
-            // TEST-CODE - [Park_Jun_Hong_(fafanmama_at_naver_com)]: 2014. 4. 7.
+            // TEST-CODE - [Park_Jun_Hong_(parkjunhong77@gmail.com)]: 2014. 4. 7.
             Object value = JSONMapper.unmarshall(fieldName, JSONUtil.get(json, fieldName), JSONMapper.getBuildConfig(this).getFieldBuildConfig(fieldName), typeInfoList.toArray());
 
             if (marshaller == null) {

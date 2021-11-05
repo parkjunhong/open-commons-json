@@ -5,7 +5,7 @@
  *
  * Date  : 2014. 6. 3. 오후 11:49:02
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 
@@ -23,7 +23,7 @@ import open.commons.utils.DateUtil;
 /**
  * 
  * @since 2014. 6. 3.
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  */
 public class NonJSONField {
     

@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Park Jun-Hong (parkjunhong77/gmail/com)
+ * Copyright 2011 Park Jun-Hong (parkjunhong77@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
  *
  * Date  : 2014. 6. 17. 오후 3:51:42
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 
@@ -35,7 +35,7 @@ import open.commons.json.model.BuildConfig;
  *            데이터 모델
  * 
  * @since 2014. 6. 17.
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  */
 public interface IValueCreator<T> extends IMarshaller<T> {
 

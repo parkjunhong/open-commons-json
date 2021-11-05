@@ -1,6 +1,6 @@
 /*
 
- * Copyright 2011 Park Jun-Hong (parkjunhong77/gmail/com)
+ * Copyright 2011 Park Jun-Hong (parkjunhong77@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,11 +24,11 @@
  *
  * Date  : 2013. 10. 30. 오후 7:01:18
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  *
  */
 /**
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  *
  */
 package open.commons.json.model.supports;

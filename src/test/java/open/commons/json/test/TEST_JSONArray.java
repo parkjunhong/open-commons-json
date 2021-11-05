@@ -5,7 +5,7 @@
  *
  * Date  : 2014. 5. 2. 오후 2:28:55
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 
@@ -23,7 +23,7 @@ import open.commons.json.model.JSONArrayFactory;
 /**
  * 
  * @since 2014. 5. 2.
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  */
 public class TEST_JSONArray {
 

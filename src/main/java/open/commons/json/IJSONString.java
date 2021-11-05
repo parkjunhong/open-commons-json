@@ -1,6 +1,6 @@
 /*
 
- * Copyright 2011 Park Jun-Hong (parkjunhong77/gmail/com)
+ * Copyright 2011 Park Jun-Hong (parkjunhong77@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
  *
  * Date  : 2012. 11. 17. 오전 5:07:00
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  *
  */
 package open.commons.json;
@@ -44,7 +44,7 @@ import open.commons.utils.ConvertUtils;
 /**
  * JSON 문자열과 상호연동을 지원하는 인터페이스.
  * 
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 public interface IJSONString extends Serializable, Cloneable {

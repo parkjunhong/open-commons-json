@@ -1,6 +1,6 @@
 /*
 
- * Copyright 2011 Park Jun-Hong (parkjunhong77/gmail/com)
+ * Copyright 2011 Park Jun-Hong (parkjunhong77@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
  *
  * Date  : 2014. 3. 17. 오후 3:50:32
  *
- * Author: Park_Jun_Hong_(fafanmama_at_naver_com)
+ * Author: Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 
@@ -51,7 +51,7 @@ import open.commons.utils.MapUtils;
 import open.commons.utils.ReflectionUtils;
 
 /**
- * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+ * @author Park_Jun_Hong_(parkjunhong77@gmail.com)
  * 
  */
 public class BuildConfig implements Cloneable{
@@ -173,7 +173,7 @@ public class BuildConfig implements Cloneable{
         AssertUtils.assertNull("Neither fieldName and config MUST be null. fieldName: " + fieldName + ", typeVar: " + typeVar);
 
         synchronized (mutexFieldBuildConfigs) {
-            // start - 신규 추가하는 데이터에 대한 검증 모듈이 보완되어야 할 듯.... : 2014. 6. 18., Park_Jun_Hong_(fafanmama_at_naver_com)
+            // start - 신규 추가하는 데이터에 대한 검증 모듈이 보완되어야 할 듯.... : 2014. 6. 18., Park_Jun_Hong_(parkjunhong77@gmail.com)
             BuildConfig config = fieldBuildConfigs.get(fieldName);
             if (config == null) {
                 config = new BuildConfig();
@@ -256,7 +256,7 @@ public class BuildConfig implements Cloneable{
         synchronized (mutexGenericTypeVars) {
             TypeVariable<?>[] typeVars = object.getClass().getTypeParameters();
 
-            // start - In case, declares generic paramerterized type but no set. : 2014. 3. 18., Park_Jun_Hong_(fafanmama_at_naver_com)
+            // start - In case, declares generic paramerterized type but no set. : 2014. 3. 18., Park_Jun_Hong_(parkjunhong77@gmail.com)
             if (typeVars.length > 0 && paramTypes.length == 0) {
                 paramTypes = new GenericTypeVariable[typeVars.length];
                 GenericTypeVariable objectType = new GenericTypeVariable(Object.class);
