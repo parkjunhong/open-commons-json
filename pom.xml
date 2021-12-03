@@ -19,7 +19,7 @@
 		<org.apache.logging.lo4j.log4j-core.version>2.7</org.apache.logging.lo4j.log4j-core.version>
 		<org.apache.logging.lo4j.log4j-api.version>2.7</org.apache.logging.lo4j.log4j-api.version>
 
-		<open-commons-core.version>1.6.5</open-commons-core.version>
+		<open-commons-core.version>1.8.0-SNAPSHOT</open-commons-core.version>
 		<!-- <<< end: dependencies -->
 
 		<!-- >>> begin: plugin dependencies -->
