@@ -1,3 +1,6 @@
+[2022/04/07]
+- Release: 1.7.0
+
 [2021/12/03]
 - Dependencies
   + open.commons.core: 1.8.0-SNAPSHOT
