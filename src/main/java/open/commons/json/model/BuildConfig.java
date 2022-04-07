@@ -41,14 +41,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import open.commons.concurrent.Mutex;
+import open.commons.core.concurrent.Mutex;
+import open.commons.core.reflect.GenericTypeVariable;
+import open.commons.core.utils.AssertUtils;
+import open.commons.core.utils.CollectionUtils;
+import open.commons.core.utils.MapUtils;
+import open.commons.core.utils.ReflectionUtils;
 import open.commons.json.IJSONString;
 import open.commons.json.annotation.JSONField;
-import open.commons.reflect.GenericTypeVariable;
-import open.commons.utils.AssertUtils;
-import open.commons.utils.CollectionUtils;
-import open.commons.utils.MapUtils;
-import open.commons.utils.ReflectionUtils;
 
 /**
  * @author Park_Jun_Hong_(parkjunhong77@gmail.com)

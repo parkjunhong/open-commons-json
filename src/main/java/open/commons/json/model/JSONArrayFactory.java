@@ -40,8 +40,8 @@ import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
+import open.commons.core.reflect.GenericTypeVariable;
 import open.commons.json.IJSONString;
-import open.commons.reflect.GenericTypeVariable;
 
 /**
  * 

@@ -51,8 +51,12 @@ import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
-import open.commons.concurrent.Mutex;
-import open.commons.io.IMarshaller;
+import open.commons.core.concurrent.Mutex;
+import open.commons.core.io.IMarshaller;
+import open.commons.core.reflect.GenericTypeVariable;
+import open.commons.core.utils.ArrayUtils;
+import open.commons.core.utils.AssertUtils;
+import open.commons.core.utils.ConvertUtils;
 import open.commons.json.IEnumMarshaller;
 import open.commons.json.IFieldMarshaller;
 import open.commons.json.IJSONString;
@@ -61,10 +65,6 @@ import open.commons.json.model.exception.JSONMarshalledException;
 import open.commons.json.model.exception.JSONUnmarshalledException;
 import open.commons.json.model.exception.MarshallerNotFoundException;
 import open.commons.jsonx.IDynamicNamedJSONString;
-import open.commons.reflect.GenericTypeVariable;
-import open.commons.utils.ArrayUtils;
-import open.commons.utils.AssertUtils;
-import open.commons.utils.ConvertUtils;
 
 /**
  * Default implemented classes are followings.

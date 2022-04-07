@@ -32,9 +32,9 @@ package open.commons.json.model.supports;
 import java.util.ArrayList;
 import java.util.List;
 
+import open.commons.core.utils.AssertUtils;
 import open.commons.json.IJSONString;
 import open.commons.json.annotation.JSONField;
-import open.commons.utils.AssertUtils;
 
 /**
  * 

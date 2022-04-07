@@ -42,18 +42,18 @@ import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
-import open.commons.io.IMarshaller;
+import open.commons.core.io.IMarshaller;
+import open.commons.core.reflect.GenericTypeVariable;
+import open.commons.core.util.IFilter;
+import open.commons.core.utils.AssertUtils;
+import open.commons.core.utils.ConvertUtils;
+import open.commons.core.utils.ReflectionUtils;
 import open.commons.json.IFieldMarshaller;
 import open.commons.json.IJSONString;
 import open.commons.json.annotation.JSONField;
 import open.commons.json.util.JSONUtil;
 import open.commons.jsonx.IDynamicNamedJSONString;
 import open.commons.jsonx.model.DynamicNamedJSONModel;
-import open.commons.reflect.GenericTypeVariable;
-import open.commons.util.IFilter;
-import open.commons.utils.AssertUtils;
-import open.commons.utils.ConvertUtils;
-import open.commons.utils.ReflectionUtils;
 
 /**
  * 하위 클래스들의 필드중에서 {@link JSONField}를 사용한 필드들을 검색해 자동으로 {@link #toString()}를 제공해주는 클래스.

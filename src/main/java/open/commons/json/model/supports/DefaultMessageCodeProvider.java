@@ -37,8 +37,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import open.commons.concurrent.Mutex;
-import open.commons.utils.AssertUtils;
+import open.commons.core.concurrent.Mutex;
+import open.commons.core.utils.AssertUtils;
 
 /**
  * 

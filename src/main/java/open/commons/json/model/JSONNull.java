@@ -34,7 +34,7 @@ import java.util.Map;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
-import open.commons.reflect.GenericTypeVariable;
+import open.commons.core.reflect.GenericTypeVariable;
 
 public final class JSONNull extends AbstractJSONModel {
 

@@ -41,9 +41,9 @@ import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
-import open.commons.collection.FIFOMap;
-import open.commons.doc.IndentationFactory;
-import open.commons.doc.IndentationFactory.Indentation;
+import open.commons.core.collection.FIFOMap;
+import open.commons.core.doc.IndentationFactory;
+import open.commons.core.doc.IndentationFactory.Indentation;
 
 public class JSONUtil {
 

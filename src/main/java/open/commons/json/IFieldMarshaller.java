@@ -30,7 +30,7 @@
 
 package open.commons.json;
 
-import open.commons.io.IMarshaller;
+import open.commons.core.io.IMarshaller;
 
 public interface IFieldMarshaller<T> extends IMarshaller<T> {
 

@@ -39,16 +39,16 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
-import open.commons.concurrent.Mutex;
+import open.commons.core.concurrent.Mutex;
+import open.commons.core.reflect.GenericTypeVariable;
+import open.commons.core.reflect.IllegalGenericNameException;
+import open.commons.core.utils.ReflectionUtils;
 import open.commons.json.model.BuildConfig;
 import open.commons.json.model.DefaultJSONModel;
 import open.commons.json.model.JSONMapper;
 import open.commons.jsonx.IDynamicNamedJSONString;
 import open.commons.jsonx.IValueCreator;
 import open.commons.jsonx.supports.ValueCreatorFactory;
-import open.commons.reflect.GenericTypeVariable;
-import open.commons.reflect.IllegalGenericNameException;
-import open.commons.utils.ReflectionUtils;
 
 /**
  * 

@@ -29,13 +29,13 @@ package open.commons.jsonx.supports;
 
 import org.codehaus.jettison.json.JSONObject;
 
+import open.commons.core.utils.AssertUtils;
 import open.commons.json.IJSONString;
 import open.commons.json.model.JSONMapper;
 import open.commons.json.model.exception.ImplClassNotFoundException;
 import open.commons.json.model.exception.JSONMarshalledException;
 import open.commons.json.model.exception.JSONUnmarshalledException;
 import open.commons.jsonx.AbstractValueCreator;
-import open.commons.utils.AssertUtils;
 
 /**
  * 

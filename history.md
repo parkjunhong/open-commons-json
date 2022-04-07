@@ -1,4 +1,10 @@
 [2022/04/07]
+- Release: 1.8.0-SNAPSHOT
+- Tag: 1.7.0
+- Dependencies:
+  + open.commons.core: 2.0.0-SNAPSHOT
+
+[2022/04/07]
 - Release: 1.7.0
 
 [2021/12/03]

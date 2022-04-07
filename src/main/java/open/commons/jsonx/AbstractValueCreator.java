@@ -27,9 +27,9 @@
 
 package open.commons.jsonx;
 
-import open.commons.io.IMarshaller;
+import open.commons.core.io.IMarshaller;
+import open.commons.core.utils.ConvertUtils;
 import open.commons.json.model.BuildConfig;
-import open.commons.utils.ConvertUtils;
 
 /**
  * 

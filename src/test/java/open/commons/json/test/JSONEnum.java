@@ -11,8 +11,8 @@
 
 package open.commons.json.test;
 
+import open.commons.core.utils.ConvertUtils;
 import open.commons.json.IEnumMarshaller;
-import open.commons.utils.ConvertUtils;
 
 /**
  * @author Park_Jun_Hong_(parkjunhong77@gmail.com)

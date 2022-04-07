@@ -37,10 +37,10 @@ import java.util.ArrayList;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
+import open.commons.core.reflect.GenericTypeVariable;
 import open.commons.json.IJSONSingle;
 import open.commons.json.annotation.JSONField;
 import open.commons.json.model.exception.JSONUnmarshalledException;
-import open.commons.reflect.GenericTypeVariable;
 
 /**
  * 

@@ -36,10 +36,10 @@ import java.util.List;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
+import open.commons.core.reflect.GenericTypeVariable;
+import open.commons.core.utils.ConvertUtils;
 import open.commons.json.annotation.JSONField;
 import open.commons.json.model.BuildConfig;
-import open.commons.reflect.GenericTypeVariable;
-import open.commons.utils.ConvertUtils;
 
 /**
  * JSON 문자열과 상호연동을 지원하는 인터페이스.

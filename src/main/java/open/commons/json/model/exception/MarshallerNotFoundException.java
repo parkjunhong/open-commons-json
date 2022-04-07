@@ -30,7 +30,7 @@
 
 package open.commons.json.model.exception;
 
-import open.commons.io.IMarshaller;
+import open.commons.core.io.IMarshaller;
 
 /**
  * 

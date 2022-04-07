@@ -27,7 +27,7 @@
 
 package open.commons.jsonx;
 
-import open.commons.io.IMarshaller;
+import open.commons.core.io.IMarshaller;
 import open.commons.json.model.BuildConfig;
 
 /**

@@ -41,13 +41,13 @@ import javax.lang.model.type.NullType;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
-import open.commons.io.IMarshaller;
+import open.commons.core.io.IMarshaller;
+import open.commons.core.reflect.GenericTypeVariable;
 import open.commons.json.IFieldMarshaller;
 import open.commons.json.annotation.JSONField;
 import open.commons.json.model.exception.JSONUnmarshalledException;
 import open.commons.json.model.exception.RequiredNameNotFoundException;
 import open.commons.json.util.JSONUtil;
-import open.commons.reflect.GenericTypeVariable;
 
 /**
  * 하위 클래스들의 필드중에서 {@link JSONField}를 사용한 필드들을 검색해 자동으로 {@link #toString()}를 제공해주는 클래스.
